@@ -15,6 +15,8 @@
 		9EDC00791C2A95F6003D82F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC00771C2A95F6003D82F2 /* LaunchScreen.storyboard */; };
 		9EDC00841C2A95F6003D82F2 /* HYPolygonControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC00831C2A95F6003D82F2 /* HYPolygonControlTests.m */; };
 		9EDC008F1C2A95F6003D82F2 /* HYPolygonControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC008E1C2A95F6003D82F2 /* HYPolygonControlUITests.m */; };
+		9EDC00A11C2A9667003D82F2 /* HYPolygonControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC009E1C2A9667003D82F2 /* HYPolygonControl.m */; };
+		9EDC00A21C2A9667003D82F2 /* UIView+Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC00A01C2A9667003D82F2 /* UIView+Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9EDC008A1C2A95F6003D82F2 /* HYPolygonControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYPolygonControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDC008E1C2A95F6003D82F2 /* HYPolygonControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPolygonControlUITests.m; sourceTree = "<group>"; };
 		9EDC00901C2A95F6003D82F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDC009D1C2A9667003D82F2 /* HYPolygonControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPolygonControl.h; sourceTree = "<group>"; };
+		9EDC009E1C2A9667003D82F2 /* HYPolygonControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPolygonControl.m; sourceTree = "<group>"; };
+		9EDC009F1C2A9667003D82F2 /* UIView+Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Circle.h"; sourceTree = "<group>"; };
+		9EDC00A01C2A9667003D82F2 /* UIView+Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Circle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		9EDC00681C2A95F6003D82F2 /* HYPolygonControl */ = {
 			isa = PBXGroup;
 			children = (
+				9EDC009C1C2A9619003D82F2 /* HYPolygonControl */,
 				9EDC006C1C2A95F6003D82F2 /* AppDelegate.h */,
 				9EDC006D1C2A95F6003D82F2 /* AppDelegate.m */,
 				9EDC006F1C2A95F6003D82F2 /* ViewController.h */,
@@ -138,6 +145,17 @@
 				9EDC00901C2A95F6003D82F2 /* Info.plist */,
 			);
 			path = HYPolygonControlUITests;
+			sourceTree = "<group>";
+		};
+		9EDC009C1C2A9619003D82F2 /* HYPolygonControl */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC009D1C2A9667003D82F2 /* HYPolygonControl.h */,
+				9EDC009E1C2A9667003D82F2 /* HYPolygonControl.m */,
+				9EDC009F1C2A9667003D82F2 /* UIView+Circle.h */,
+				9EDC00A01C2A9667003D82F2 /* UIView+Circle.m */,
+			);
+			path = HYPolygonControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +291,8 @@
 				9EDC00711C2A95F6003D82F2 /* ViewController.m in Sources */,
 				9EDC006E1C2A95F6003D82F2 /* AppDelegate.m in Sources */,
 				9EDC006B1C2A95F6003D82F2 /* main.m in Sources */,
+				9EDC00A21C2A9667003D82F2 /* UIView+Circle.m in Sources */,
+				9EDC00A11C2A9667003D82F2 /* HYPolygonControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HYPolygonControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shuogao.HYPolygonControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HYPolygonControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shuogao.HYPolygonControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
